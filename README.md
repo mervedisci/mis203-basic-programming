@@ -1,1 +1,4 @@
-# mis203-basic-programming
+Merve Dişci
+2504109075
+Management Information Technology
+Basic Programming
