@@ -1,10 +1,10 @@
-Merve Dişci
+Name: Merve Dişci
 
-2504109075
+Student Number: 2504109075
 
-Management Information Systems
+Department: Management Information Systems
 
-MIS203 Basic Programming
+Course Name: MIS203 Basic Programming
 
 Ai Tool Used: Gemini
 
