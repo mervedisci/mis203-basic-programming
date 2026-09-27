@@ -1,5 +1,9 @@
+count = 0
+total = 0
 while True:
-  student_name = input("Enter Student Name: ")
+  student_name = input("Enter Student Name('q' to quit: ")
+  if student_name == "q":
+    break
   score = int(input("Enter Score: "))
   if score < 0 or score > 100:
     print("Invalid Score. Please Enter A Number Between 0 And 100")
@@ -15,5 +19,12 @@ while True:
   elif score < 60:
     letter = "F"
   print(f"{student_name}'s score is {score} -> {letter}")
-  if student_name == "q":
-    break
+  
+  count += 1
+  total = total + score
+if count == 0:
+  print("No student entered.")
+else: 
+  average = total / count
+  print(f"{count} student entered.")
+  print(f"Average score: {average:2f}")
