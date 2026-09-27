@@ -1,1 +1,8 @@
+AI Tool Used: ChatGPT
 
+Prompt Used: After the loop ends, print the number of students and the average score, rounded to 2 decimal places
+
+What did I change: I wrote the code myself at first but I couldn't remember to get the average.
+
+What does break do in my program: It exits the loop immediately; if you didn't enter, it prints 'No student entered.', if you entered students, it prints 
+the score letter and how many student you entered and average score.
