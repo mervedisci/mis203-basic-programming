@@ -1,0 +1,2 @@
+I wrote it first with 2 delivery fee. But i changed it to 1 because we didn't need 2. 
+input() values must be converted because it returns string, but we need integer to used in arithmetic
