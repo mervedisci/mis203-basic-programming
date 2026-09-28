@@ -1,9 +1,9 @@
 
-name = input("Enter name: ")
-studentid = input("Enter student id: ")
-department = input("Enter department: ")
+name = input("Enter Name: ")
+studentid = input("Enter Student ID: ")
+department = input("Enter Department: ")
 username =  input("Enter GitHub Username: ")
-goal = input("Enter programming goal: ")
+goal = input("Enter Programming Goal: ")
 
 print(f"Name: {name}") 
 print(f"Student ID: {studentid}") 
