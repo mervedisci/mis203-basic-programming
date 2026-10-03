@@ -1,1 +1,37 @@
 
+AI Tool Used: Gemini
+Prompt Used:
+Create a Python program named ticket_office.py that sells cinema tickets in a loop using inputs, type conversion, f-strings, and conditions (if/elif/else). 
+Validate age (0-120), day (weekday/weekend), and student status (yes/no). 
+Apply discounts in order: <6 (100% Free), >=65 (50% Senior), 6-12 (40% Child), Student <=25 (30% Student), Else (0% Standard). 
+Keep track of total tickets sold, revenue, average price, and free tickets.
+
+What did you change?
+I adjusted the output messages to make sure they matched the exact required format.
+I also added a try-except block for the age input so the program wouldn't crash if someone entered a letter instead of a number.
+
+Tests:
+Customer name (q to quit): Ali
+Age: 20
+Day (weekday/weekend): weekend
+Student (yes/no): yes
+Ali: 175.00 TRY (Student)
+Customer name (q to quit): Zeynep
+Age: 5
+Day (weekday/weekend): weekend
+Student (yes/no): no
+Zeynep: 0.00 TRY (Free)
+Customer name (q to quit): Tuğçe
+Age: 6
+Day (weekday/weekend): weekday
+Student (yes/no): yes
+Tuğçe: 120.00 TRY (Child)
+Customer name (q to quit): q
+Tickets sold: 3
+Total revenue: 295.00 TRY
+Average price: 98.33 TRY
+Free tickets: 1
+
+Why does the order of the rules matter?
+The order is important because Python stops checking conditions as soon as it finds the first true one. If we put the Student rule before the Child rule,
+a 10-year-old student would get the 30% Student discount instead of the 40% Child discount that they actually deserve.
