@@ -1,0 +1,28 @@
+Tests:
+
+=== Order System ===
+Enter quantity: 2
+Enter stock: 10
+Enter price (TRY): 500
+Is member? (yes/no): yes
+**Status: Approved: 10% member discount applied.
+**Final Price: 450.00 TRY
+
+=== Order System ===
+Enter quantity: 2
+Enter stock: 10
+Enter price (TRY): 499
+Is member? (yes/no): yes
+**Status: Approved: Member price (no discount under 500 TRY).
+**Final Price: 499 TRY
+
+=== Order System ===
+Enter quantity: 2
+Enter stock: 10
+Enter price (TRY): 501
+Is member? (yes/no): yes
+**Status: Approved: 10% member discount applied.
+**Final Price: 450.90 TRY
+
+Tested boundary case with input `500.00` TRY for a member.
+Updated condition from `price > 500` to `price >= 500` to include 500 TRY in the discount.
