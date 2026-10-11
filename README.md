@@ -33,6 +33,28 @@ What did you change?
 I adjusted the output messages to make sure they matched the exact required format.
 I also added a try-except block for the age input so the program wouldn't crash if someone entered a letter instead of a number.
 
+Tests:
+Customer name (q to quit): Ali
+Age: 20
+Day (weekday/weekend): weekend
+Student (yes/no): yes
+Ali: 175.00 TRY (Student)
+Customer name (q to quit): Zeynep
+Age: 5
+Day (weekday/weekend): weekend
+Student (yes/no): no
+Zeynep: 0.00 TRY (Free)
+Customer name (q to quit): Tuğçe
+Age: 6
+Day (weekday/weekend): weekday
+Student (yes/no): yes
+Tuğçe: 120.00 TRY (Child)
+Customer name (q to quit): q
+Tickets sold: 3
+Total revenue: 295.00 TRY
+Average price: 98.33 TRY
+Free tickets: 1
+
 Why does the order of the rules matter?
 The order is important because Python stops checking conditions as soon as it finds the first true one. If we put the Student rule before the Child rule,
 a 10-year-old student would get the 30% Student discount instead of the 40% Child discount that they actually deserve.
@@ -42,6 +64,14 @@ AI Tool Used: Gemini
 Prompt Used: Write a Python script for a Smart Budget & Spending Analyst that handles monthly budgets, categorizes expenses with validation, includes randomized financial surprise events, and prints a formatted summary report.
 
 What I changed: I added robust input validation loops with try-except blocks, restricted negative expense entries, and applied :.2f f-string formatting for currency precision.
+
+Tests:
+Input: Budget = 2500, Rent = 1000, Food = 500, Entertainment = 200.
+Result: Total expenses equaled $1700.00, correctly subtracted from the budget alongside the randomized surprise event.
+Input: Entering "two thousand" for the budget.
+Result Caught ValueError and successfully defaulted to $1000.0.
+Input: Entering "-50" for an expense category.
+Result: Triggered validation warning ("Expense cannot be negative! Try again.") and re-prompted the user.
 
 Why does the order of the rules matter?
 The order of the rules matters because the code needs to ask for inputs and fix any errors first before it can accurately calculate the final results.
