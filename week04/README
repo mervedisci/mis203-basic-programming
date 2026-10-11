@@ -1,5 +1,5 @@
 AI Tool Used: Gemini
-Prompt Used: Write a Python script for a Smart Budget & Spending Analyst that handles monthly budgets, categorizes expenses with validation, includes randomized financial surprise events, and prints a formatted summary report.
+Prompt Used: Write a Python script for a Smart Budget & Spending Analyst that handles monthly budgets,  categorizes expenses with validation, includes randomized financial surprise events, and prints a formatted summary report.
 
 Tests:
 
