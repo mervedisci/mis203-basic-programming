@@ -33,7 +33,7 @@ What did you change?
 I adjusted the output messages to make sure they matched the exact required format.
 I also added a try-except block for the age input so the program wouldn't crash if someone entered a letter instead of a number.
 
-Tests:
+Tests:  
 Customer name (q to quit): Ali  
 Age: 20  
 Day (weekday/weekend): weekend  
@@ -65,13 +65,13 @@ Prompt Used: Write a Python script for a Smart Budget & Spending Analyst that ha
 
 What I changed: I added robust input validation loops with try-except blocks, restricted negative expense entries, and applied :.2f f-string formatting for currency precision.
 
-Tests:
-Input: Budget = 2500, Rent = 1000, Food = 500, Entertainment = 200.
-Result: Total expenses equaled $1700.00, correctly subtracted from the budget alongside the randomized surprise event.
-Input: Entering "two thousand" for the budget.
-Result Caught ValueError and successfully defaulted to $1000.0.
-Input: Entering "-50" for an expense category.
-Result: Triggered validation warning ("Expense cannot be negative! Try again.") and re-prompted the user.
+Tests:  
+Input: Budget = 2500, Rent = 1000, Food = 500, Entertainment = 200.  
+Result: Total expenses equaled $1700.00, correctly subtracted from the budget alongside the randomized surprise event.  
+Input: Entering "two thousand" for the budget.  
+Result Caught ValueError and successfully defaulted to $1000.0.  
+Input: Entering "-50" for an expense category.  
+Result: Triggered validation warning ("Expense cannot be negative! Try again.") and re-prompted the user.  
 
 Why does the order of the rules matter?
 The order of the rules matters because the code needs to ask for inputs and fix any errors first before it can accurately calculate the final results.
