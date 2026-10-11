@@ -2,8 +2,7 @@ AI Tool Used: Gemini
 Prompt Used: Write a Python script for a Smart Budget & Spending Analyst that handles monthly budgets, categorizes  
 expenses with validation, includes randomized financial surprise events, and prints a formatted summary report.
 
-Tests:
-
+Tests:  
 Input: Budget = 2500, Rent = 1000, Food = 500, Entertainment = 200.  
 Result: Total expenses equaled $1700.00, correctly subtracted from the budget alongside the randomized surprise event.  
 Input: Entering "two thousand" for the budget.  
