@@ -7,6 +7,7 @@ Mevcut Orijinal Liste:
 
 Geçici Olarak Sıralanmış Liste (sorted):
 [['Burak Tan', ['Tasarım']], ['Mehlike Şahin', ['Tasarım', 'Pazarlama']], ['Merve Dişci', ['Yazılım']]]
+
 Orijinal Listenin Değişmediğinin Kanıtı (Orijinal Liste):
 [['Merve Dişci', ['Yazılım']], ['Mehlike Şahin', ['Tasarım', 'Pazarlama']], ['Burak Tan', ['Tasarım']]]
 
