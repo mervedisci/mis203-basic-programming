@@ -1,29 +1,29 @@
 branslar = ("Yazılım", "Tasarım", "Pazarlama")
 tum_ogrenciler = []
 
-ogrenci1_ad = " Ahmet Yılmaz ".strip()
+ogrenci1_ad = " Merve Dişci ".strip()
 tum_ogrenciler.append([ogrenci1_ad, ["Yazılım"]])
 
-ogrenci2_ad = " Zeynep Demir ".strip()
+ogrenci2_ad = " Mehlike Şahin ".strip()
 tum_ogrenciler.append([ogrenci2_ad, ["Tasarım", "Pazarlama"]])
 
-ogrenci3_ad = " Can Kaya ".strip()
+ogrenci3_ad = " Sevim Sarıkaya ".strip()
 tum_ogrenciler.append([ogrenci3_ad, ["Yazılım", "Tasarım"]])
 
-baskan_ad = " Mehmet Başkan ".strip()
+baskan_ad = " Ayşenur Alkan ".strip()
 tum_ogrenciler.insert(0, [baskan_ad, ["Yazılım", "Tasarım", "Pazarlama"]])
 
 print(f"Toplam Kayıtlı Öğrenci Sayısı: {len(tum_ogrenciler)}")
 
 for ogrenci in tum_ogrenciler:
-    if ogrenci[0] == "Can Kaya":
+    if ogrenci[0] == "Ayşenur Alkan":
         tum_ogrenciler.remove(ogrenci)
         break
 
 cikan_ogrenci = tum_ogrenciler.pop()
 print(f"Sistemden en son çıkan öğrenci: {cikan_ogrenci[0]}")
 
-tum_ogrenciler.append(["Burak Tan", ["Tasarım"]])
+tum_ogrenciler.append(["Lale Sude", ["Tasarım"]])
 
 print("\nMevcut Orijinal Liste:")
 print(tum_ogrenciler)
