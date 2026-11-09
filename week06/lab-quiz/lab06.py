@@ -23,7 +23,7 @@ for ogrenci in tum_ogrenciler:
 cikan_ogrenci = tum_ogrenciler.pop()
 print(f"Sistemden en son çıkan öğrenci: {cikan_ogrenci[0]}")
 
-tum_ogrenciler.append(["Lale Sude", ["Tasarım"]])
+tum_ogrenciler.append(["Burak Tan", ["Tasarım"]])
 
 print("\nMevcut Orijinal Liste:")
 print(tum_ogrenciler)
